@@ -22,10 +22,10 @@ function showModal(title, message) {
 // Updated function to add a transaction history entry
 function addTransactionToHistory(donationAmount, destination) {
     const historyEntry = document.createElement('div');
-    historyEntry.classList.add('history-item', 'my-2', 'p-2', 'border', 'rounded', 'shadow');
+    historyEntry.classList.add('history-item', 'my-2', 'p-2', 'border-2', 'rounded', 'shadow' ,'px-5') , 'mx-auto';
     historyEntry.innerHTML = `
         <p>${donationAmount} BDT - ${destination}</p>
-        <p>Date ${new Date().toLocaleString()} (Bangladesh Standard Time)</p>
+        <p>Date: ${new Date().toLocaleString()} (Bangladesh Standard Time)</p>
     `;
     // Append the new transaction to the transaction container
     document.getElementById('transaction-container').appendChild(historyEntry);
@@ -121,3 +121,26 @@ document.getElementById('btn-donate-money-student').addEventListener('click', fu
 document.getElementById('btn-blog').addEventListener("click", function() {
     window.location.href = "./blog.html";
 });
+
+
+// show 
+
+document.getElementById('btn-donate')
+    .addEventListener('click', function(){
+        showSectionById('main-donate');
+        
+        document.getElementById('btn-donate').classList.add('bg-[#B4F461]');
+        document.getElementById('btn-history').classList.remove('bg-[#B4F461]');
+    })
+document.getElementById('btn-history')
+    .addEventListener('click', function(){
+        showSectionById('foot-history');
+        
+        document.getElementById('btn-history').classList.add('bg-[#B4F461]');
+        document.getElementById('btn-donate').classList.remove('bg-[#B4F461]');
+        
+
+    })
+
+
+

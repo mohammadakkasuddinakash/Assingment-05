@@ -37,12 +37,13 @@
             </div>
         </section>
 
-        <section class="bg-white text-center justify-center py-3">
+        <section class="bg-white text-center justify-center py-3 backdrop-blur-lg bg-opacity-50">
 
             <div class="lg:static top-0 left-0 right-0">
-                <button class="font-bold py-2 px-5 rounded-md text-lg bg-[#B4F461] mx-3">Donation</button>
-                <button class="font-bold py-2 px-5  rounded-md text-lg bg-[#B4F461] mx-3">History</button>
-                <div class="divider"></div>
+                <button id="btn-donate" class="font-bold py-2 px-5 rounded-md text-lg bg-[#B4F461] mx-3 border">Donation</button>
+
+                <button id="btn-history" class="font-bold py-2 px-5  rounded-md text-lg border mx-3 ">History</button>
+                
             </div>
 
         </section>
@@ -50,7 +51,7 @@
 
     
 
-    <main class="bg-white text-center justify-center ">
+    <main id="main-donate" class="bg-white text-center justify-center py-4">
 
 
 
@@ -234,8 +235,15 @@
     </section>
 
 
-    <footer>
-        <section>
+
+
+        
+
+
+    </main>
+
+    <footer id="foot-history">
+        <section class="mx-auto text-center text-lg font-bold">
             <div id="transaction-section" class="">
                 <div id="transaction-container" class="mt-5 space-y-3">
                     <!-- Transactions will be added here -->
@@ -243,12 +251,6 @@
             </div>
         </section>
     </footer>
-
-
-        
-
-
-    </main>
 
     
     

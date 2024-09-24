@@ -26,3 +26,13 @@ function showModal(title, message) {
     document.getElementById('my_modal_1').showModal(); // Ensure the modal is displayed
 }
 
+function showSectionById(id){
+    document.getElementById('main-donate').classList.add('hidden');
+    document.getElementById('foot-history').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
+
+
+
+
